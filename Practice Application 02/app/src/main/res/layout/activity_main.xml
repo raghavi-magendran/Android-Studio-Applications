@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/secondName"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="-76dp"
+        android:onClick="onBtnClicked"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/secondName"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="@+id/secondName"
+        app:layout_constraintTop_toBottomOf="@+id/secondName" />
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="First Name"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="302dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/secondName"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/firstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-64dp"
+        android:hint="Second Name"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="352dp" />
+
+    <TextView
+        android:id="@+id/welcomeMsg"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="172dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnFunction"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/btnFunction"
+        app:layout_constraintTop_toBottomOf="@+id/btnFunction" />
+
+</RelativeLayout>
