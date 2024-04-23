@@ -8,7 +8,6 @@
     tools:context=".MainActivity"
     android:background="@color/primarybg">
 
-
     <LinearLayout
         android:id="@+id/secondary_bg"
         android:layout_width="300dp"
