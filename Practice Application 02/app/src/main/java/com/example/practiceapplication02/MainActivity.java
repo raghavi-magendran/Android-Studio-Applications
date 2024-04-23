@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
       //    return insets;
       //  });
     }
-
     public void onBtnClicked (View view)
     {
         TextView firstName = findViewById(R.id.firstName);
