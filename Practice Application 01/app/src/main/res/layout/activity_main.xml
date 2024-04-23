@@ -9,45 +9,33 @@
     android:background="@color/primarybg">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/secondaryBackground"
+    <LinearLayout
+        android:id="@+id/secondary_bg"
         android:layout_width="300dp"
-        android:layout_height="621dp"
-        android:background="@color/secondarybg"
-        android:layout_gravity="center"
+        android:layout_height="500dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:background="@drawable/second_background">
 
         <TextView
-            android:id="@+id/welcomemsgName"
-            android:layout_width="251dp"
-            android:layout_height="74dp"
-            android:gravity="center"
-            android:text="Hello, Rahul"
-            android:textColor="@color/primarytext"
-            android:textSize="35dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.51"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.38" />
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:text="@string/hello"
+            android:textAlignment="center"
+            android:textColor="@color/primarytext"/>
 
         <TextView
-            android:id="@+id/empID"
-            android:layout_width="149dp"
-            android:layout_height="43dp"
-            android:text="(P90012368)"
-            android:gravity="center"
+            android:id="@+id/emp_id"
+            android:layout_width="wrap_content"
+            android:layout_height="18sp"
+            android:text="@string/name1"
             android:textColor="@color/secondarytext"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcomemsgName"
-            app:layout_constraintVertical_bias="0.158" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:textAlignment="center"/>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
