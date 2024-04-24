@@ -19,9 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Basic Application"
-include(":app")
-include(":app")
-include(":app")
+rootProject.name = "Practice Application 03"
 include(":app")
  
