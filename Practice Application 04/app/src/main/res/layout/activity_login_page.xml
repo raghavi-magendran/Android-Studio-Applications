@@ -32,13 +32,13 @@
             android:textColorHint="@color/white"
             />
         <EditText
-            android:id="@+id/userName"
+            android:id="@+id/emailId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_layout"
             android:textSize="15sp"
             android:padding="10dp"
-            android:hint="User Name"
+            android:hint="E-mail"
             android:textColorHint="@color/white"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"

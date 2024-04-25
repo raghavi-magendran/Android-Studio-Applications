@@ -9,7 +9,7 @@
     android:background="@color/black">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/linearLayout_top"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:padding="5dp"
@@ -41,6 +41,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout_body"
         android:layout_width="300dp"
         android:layout_height="600dp"
         android:background="@drawable/secondbackg"
@@ -51,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_top"
         app:layout_constraintVertical_bias="0.185">
 
         <TextView
@@ -60,7 +61,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_weight="1"
-            android:text="@string/i1" />
+            android:text="@string/instruction1" />
 
         <TextView
             android:id="@+id/instruction2"
@@ -68,7 +69,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_weight="1"
-            android:text="@string/i2" />
+            android:text="@string/instruction2" />
 
         <TextView
             android:id="@+id/instruction3"
@@ -76,7 +77,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_weight="1"
-            android:text="@string/i3" />
+            android:text="@string/instruction3" />
 
         <TextView
             android:id="@+id/instruction4"
@@ -84,7 +85,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:layout_weight="1"
-            android:text="@string/i4" />
+            android:text="@string/instruction4" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,9 +7,8 @@ import android.content.Intent;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class HomePage extends AppCompatActivity {
-    private TextView welcomeMsg;
-    private String name;
+public class HomePage01 extends AppCompatActivity {
+
     public static final String NAME = "NAME";
 
     @Override
@@ -18,10 +17,12 @@ public class HomePage extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.homepage);
 
+        TextView welcomeMsg;
+        String name;
         welcomeMsg = findViewById(R.id.welcome_msg);
         Intent intent = getIntent();
         name = intent.getStringExtra(NAME);
-        welcomeMsg.setText("Hello " + name + "!!!");
+        welcomeMsg.setText(String.format("Hello %s!!!", name));
 
     }
 }

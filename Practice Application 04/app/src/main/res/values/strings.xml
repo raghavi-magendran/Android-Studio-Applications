@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Practice Application 04</string>
-    <string name="i1">\"1\" or \"2\" to select an option</string>
-    <string name="i2">\"OK\" to confirm you \"choice\"</string>
-    <string name="i3"> Buttons on the touchpad to select an option</string>
-    <string name="i4">\"TAP\" to confirm your choice</string>
+    <string name="instruction1">\"1\" or \"2\" to select an option</string>
+    <string name="instruction2">\"OK\" to confirm you \"choice\"</string>
+    <string name="instruction3"> Buttons on the touchpad to select an option</string>
+    <string name="instruction4">\"TAP\" to confirm your choice</string>
 </resources>
