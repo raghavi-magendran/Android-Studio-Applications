@@ -1,6 +1,6 @@
 package com.example.practiceapplication04;
 
-import android.content.Intent;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -56,8 +56,6 @@ public class Instructions extends AppCompatActivity {
 
         Button backBtn = findViewById(R.id.previouspageBtn);
         backBtn.setOnClickListener(v -> {
-           // Intent intent = new Intent(Instructions.this, HomePage.class);
-           // startActivity(intent);
             finish();
         });
     }
