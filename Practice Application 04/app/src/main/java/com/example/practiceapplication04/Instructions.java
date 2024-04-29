@@ -3,6 +3,7 @@ package com.example.practiceapplication04;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
@@ -23,40 +24,30 @@ public class Instructions extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_instructions);
 
-
-        int accentColor = ContextCompat.getColor(this, R.color.accentColor);
-
-        TextView instruction1 = findViewById(R.id.instruction1);
-        SpannableString spannableString1 = new SpannableString("\"1\" or \"2\" to select an option.");
-        spannableString1.setSpan(new ForegroundColorSpan(accentColor), 0, 3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString1.setSpan(new ForegroundColorSpan(Color.WHITE), 4, 5, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString1.setSpan(new ForegroundColorSpan(accentColor), 7, 10, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString1.setSpan(new ForegroundColorSpan(Color.WHITE), 11, 30, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        instruction1.setText(spannableString1);
-
-        TextView instruction2 = findViewById(R.id.instruction2);
-        SpannableString spannableString2 = new SpannableString("\"OK\" to confirm your \"choice\".");
-        spannableString2.setSpan(new ForegroundColorSpan(accentColor), 0, 4, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString2.setSpan(new ForegroundColorSpan(Color.WHITE), 5, 29, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        instruction2.setText(spannableString2);
-
-        TextView instruction3 = findViewById(R.id.instruction3);
-        SpannableString spannableString3 = new SpannableString("Buttons on the touchpad to select an option.");
-        spannableString3.setSpan(new ForegroundColorSpan(accentColor), 0, 23, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE); // Apply accentColor up to the word "touchpad"
-        spannableString3.setSpan(new ForegroundColorSpan(Color.WHITE), 24, spannableString3.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE); // Apply white color to the rest of the text
-        instruction3.setText(spannableString3);
-
-
-        TextView instruction4 = findViewById(R.id.instruction4);
-        SpannableString spannableString4 = new SpannableString("\"TAP\"to confirm your choice.");
-        spannableString4.setSpan(new ForegroundColorSpan(accentColor), 0, 5, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        spannableString4.setSpan(new ForegroundColorSpan(Color.WHITE), 9, 24, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        instruction4.setText(spannableString4);
-
-
+        setTextColor();
         Button backBtn = findViewById(R.id.previouspageBtn);
         backBtn.setOnClickListener(v -> {
             finish();
         });
+    }
+
+    public void setTextColor()
+
+    {
+        TextView instruction1 = findViewById(R.id.instruction1);
+        String message1 = "<font color='#BB86FC'> \"1\" </font> or <font color='#BB86FC'>\"2\" </font> to select an option. ";
+        instruction1.setText(Html.fromHtml(message1, Html.FROM_HTML_MODE_LEGACY));
+
+        TextView instruction2 = findViewById(R.id.instruction2);
+        String message2 = "<font color='#BB86FC'> \"OK\" </font> to confirm your \"choice\". ";
+        instruction2.setText(Html.fromHtml(message2, Html.FROM_HTML_MODE_LEGACY));
+
+        TextView instruction3 = findViewById(R.id.instruction3);
+        String message3 = "<font color='#BB86FC'> Buttons on the touchpad </font> to select an option. ";
+        instruction3.setText(Html.fromHtml(message3, Html.FROM_HTML_MODE_LEGACY));
+
+        TextView instruction4 = findViewById(R.id.instruction4);
+        String message4 = "<font color='#BB86FC'> \"TAP\" </font> to confirm your choice.";
+        instruction4.setText(Html.fromHtml(message4, Html.FROM_HTML_MODE_LEGACY));
     }
 }
