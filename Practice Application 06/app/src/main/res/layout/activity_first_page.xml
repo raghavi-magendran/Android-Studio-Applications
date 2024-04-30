@@ -18,9 +18,10 @@
         android:background="@color/black">
 
         <TableRow>
-            <Button
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
                 android:layout_margin="5dp"
                 android:text="1"
                 android:gravity="center"
@@ -46,6 +47,7 @@
                 android:layout_margin="5dp"
                 android:gravity="center"
                 android:textSize="25sp"
+                android:layout_weight="1"
                 android:textColor="@color/white"
                 android:background="@drawable/round_button" />
 
@@ -61,7 +63,7 @@
         </TableRow>
 
         <TableRow>
-            <Button
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3"

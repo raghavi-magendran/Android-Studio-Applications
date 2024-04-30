@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.text.Html;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -33,6 +34,13 @@ public class TestActivity extends AppCompatActivity {
         TextView i1 = findViewById(R.id.instruction1);
         String message = "<font color='#BB86FC'> \"1\" </font> or <font color='#BB86FC'>\"2\" </font> to select an option. ";
         i1.setText(Html.fromHtml(message, Html.FROM_HTML_MODE_LEGACY));
+
+        Log.v("success01", "Verbose message");
+        Log.d("debug02", "Debug message");
+        Log.i("info03", "Information message");
+        Log.w("warn04", "Warning message");
+        Log.e("error05", "Error message");
+        Log.wtf("assert06", "Assert message");
     }
 
 }
